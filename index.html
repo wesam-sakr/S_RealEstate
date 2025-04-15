@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>عقارات السعودية</title>
+    <link rel="icon" href="images/fav.svg" />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap link  -->
+    <link
+      rel="stylesheet"
+      href="css/bootstrap.rtl.min.css"
+      id="bootstrap-style"
+    />
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
+
+    <!-- owl-carousel link -->
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+
+    <!-- nice select link -->
+    <link rel="stylesheet" href="css/nice-select.css" />
+
+    <!-- fancybox link -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <header>
+      <!-- الشريط العلوي -->
+      <nav class="navbar top-nav">
+        <div class="container-fluid">
+          <div
+            class="helper-links w-100 d-flex align-items-center justify-content-between py-2"
+          >
+            <ul class="helper-pages m-0 d-flex gap-2 align-items-center">
+              <li class="d-md-block d-none">
+                <a href="system.html" aria-label="الذهاب إلى  شرح اليات نظام">
+                  <span>شرح اليات نظام</span>
+                </a>
+              </li>
+              <li class="d-md-block d-none">
+                <a href="policy.html" aria-label="الذهاب إلى سياسة الخصوصية">
+                  <span>سياسة الخصوصية</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" id="lang" aria-label="تغيير اللغة إلى الإنجليزية">
+                  <i class="bi bi-globe"></i>
+                  <span id="lang-text">EN</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="helper-pages m-0 d-flex align-items-center">
+              <li>
+                <a
+                  class="secondary"
+                  href="register.html"
+                  aria-label="إنشاء حساب جديد"
+                >
+                  <i class="bi bi-box-arrow-in-left"></i>
+                  <span>إنشاء حساب</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="secondary"
+                  href="login.html"
+                  aria-label="تسجيل الدخول"
+                >
+                  <i class="bi bi-person"></i>
+                  <span>تسجيل دخول</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="secondary"
+                  href="profile.html"
+                  aria-label="الملف الشخصي"
+                >
+                  <i class="bi bi-person"></i>
+                  <span>الملف الشخصي</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- القائمة الرئيسية -->
+      <nav class="navbar main-nav navbar-expand-lg top-0">
+        <div class="container-fluid">
+          <a class="navbar-brand m-0" href="index.html">
+            <img src="images/logo.png" alt="Saudi Real Estate Logo" />
+          </a>
+          <div
+            class="collapse navbar-collapse justify-content-between align-items-center"
+            id="navbarSupportedContent"
+          >
+            <!-- روابط القائمة -->
+            <ul class="navbar-nav gap-xl-3 mb-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="index.html"
+                  aria-label="الذهاب إلى الصفحة الرئيسية"
+                  >الرئيسية</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="about.html"
+                  aria-label="الذهاب إلى صفحة من نحن"
+                  >من نحن</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="estates.html"
+                  aria-label="الذهاب إلى صفحة العقارات"
+                  >العقارات</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="blogs.html"
+                  aria-label="الذهاب إلى صفحة المدونة"
+                  >المدونة</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="contact.html"
+                  aria-label="الذهاب إلى صفحة تواصل معنا"
+                  >تواصل معنا</a
+                >
+              </li>
+            </ul>
+            <!-- مربع البحث -->
+            <div class="search-box">
+              <form action="" method="GET">
+                <input
+                  type="search"
+                  name="reference_number"
+                  class="form-control"
+                  placeholder="بحث بكود العقار"
+                  aria-label="بحث بكود العقار"
+                  required
+                />
+                <button type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- hero section -->
+    <section class="heroSec position-relative">
+      <div class="overlay"></div>
+      <div class="hero-content text-center text-white">
+        <div class="container-fluid h-100">
+          <h1 class="mb-2 fs-2 fw-semibold">اكتشف عقارك المناسب بكل سهولة</h1>
+          <p class="fs-4">
+            بيع، شراء، توثيق، ومشاركة العقارات بخطوات بسيطة وآمنة
+          </p>
+
+          <div class="search-box">
+            <form method="post" action="">
+              <select name="">
+                <option value="">للبيع</option>
+                <option value="18">للإيجار</option>
+              </select>
+              <input
+                type="search"
+                name="search"
+                id="search"
+                value=""
+                placeholder=" ابحث عن العقار الذي تريده "
+                class="ui-autocomplete-input"
+                autocomplete="off"
+              />
+              <button type="submit" class="btn main-btn">
+                <i class="bi bi-search me-1 d-none d-md-inline"></i>
+                <span>بحث</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <nav aria-label="scroll to next section">
+        <ul class="scroll-to-next p-0">
+          <li>
+            <a href="#about_sec">
+              <i class="bi bi-arrow-down"></i>
+              <span>التمرير للأسفل</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- about us -->
+    <section id="about_sec" class="about-us py-5">
+      <div class="container-fluid">
+        <div class="row align-items-center gy-3 gx-md-5 mb-4">
+          <div class="col-lg-6">
+            <div class="section-title">
+              <p class="secDesc fw-bold secondary fs-4">
+                تعرف على عقارات السعودية
+              </p>
+            </div>
+            <div class="about-txt d-flex flex-column gap-3 my-4">
+              <p>
+                في عقارات السعودية، نؤمن بأن العثور على العقار المثالي يجب أن
+                يكون تجربة سهلة وواضحة. نحن منصة إلكترونية متخصصة في عرض
+                العقارات داخل المملكة، نقدم حلولاً ذكية ومبتكرة للبحث عن عقارات
+                للبيع أو الإيجار بما يتناسب مع احتياجاتك وطموحاتك
+              </p>
+            </div>
+            <a
+              href="about.html"
+              aria-label="تعرف على شركتنا السعودية للعقارات"
+              class="main-outline-btn"
+            >
+              المزيد
+            </a>
+          </div>
+          <div class="col-md-9 col-lg-6">
+            <img src="images/about.png" class="w-100" alt="" />
+          </div>
+        </div>
+        <div class="row align-items-center gy-3 gx-md-5">
+          <div class="col-md-9 col-lg-6">
+            <img src="images/why.png" class="w-100" alt="" />
+          </div>
+          <div class="col-lg-6">
+            <div class="section-title">
+              <p class="secDesc fw-bold secondary fs-4">
+                لماذا عقارات السعودية هو خيارك المناسب ؟  
+              </p>
+            </div>
+            <div class="about-txt d-flex flex-column gap-3 my-4">
+              <p>
+                نحرص على توفير معلومات دقيقة، وخيارات متنوعة من الشقق، الفلل، الأراضي، والمكاتب التجارية، من مصادر موثوقة وبأسعار تنافسية. رؤيتنا هي أن نكون وجهتك الأولى في السوق العقاري السعودي، ورسالتنا هي تسهيل عملية البحث والاختيار من خلال أدوات متقدمة وخدمة عملاء متميزة. 
+
+                <a href="">
+                  انضم إلينا، ودعنا نساعدك في اتخاذ القرار الأفضل في رحلتك العقارية
+                </a>
+              </p>
+            </div>
+            <a
+              href="about.html"
+              aria-label="تعرف على شركتنا السعودية للعقارات"
+              class="main-outline-btn"
+            >
+              المزيد
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- features section -->
+    <div class="features py-5">
+      <div class="container-fluid">
+        <div class="row gy-3">
+          <div class="col-md-4">
+            <div class="feature">
+              <div class="feature-icon">
+                <img src="images/step1.png" alt="" />
+              </div>
+              <div class="feature-content">
+                <h3 class="fs-6 fw-bold main my-3">راحة وموثوقية في كل خطوة</h3>
+                <p>
+                  اختار عقارك وأنت مطمّن، لأننا بنعرض بس العقارات اللي تم التحقق منها ومراجعتها بعناية
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature">
+              <div class="feature-icon">
+                <img src="images/step2.png" alt="" />
+              </div>
+              <div class="feature-content">
+                <h3 class="fs-6 fw-bold main my-3">استثمر بأمان وسهولة</h3>
+                <p>
+                  سواء كنت بتدور على فرصة استثمارية أو شقة للإيجار، منصتنا بتساعدك توصل للفرصة الصح في المكان الصح                
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature">
+              <div class="feature-icon">
+                <img src="images/step3.png" alt="" />
+              </div>
+              <div class="feature-content">
+                <h3 class="fs-6 fw-bold main my-3">عقارات تناسب كل الأذواق</h3>
+                <p>
+                  من شقق صغيرة لعائلات، لمكاتب، لمشاريع سكنية كاملة — تقدر تلاقي كل الأنواع في مكان واحد                
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- estates section -->
+    <section class="our-estates py-5">
+      <div class="container-fluid">
+        <div class="section-title text-center pb-4">
+          <p class="secDesc fw-bold secondary fs-3">اكتشف عقارك المثالي</p>
+        </div>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 gy-4">
+          <div class="col">
+            <div class="card">
+              <!-- estate link -->
+              <a
+                href="estate-details.html"
+                aria-label="مشاهدة تفاصيل عقار اسم العقار"
+                class="link"
+              ></a>
+              
+              <div class="package-desc"> 
+                عقار متزايد
+              </div>
+
+              <!-- estate img -->
+              <div class="estate-img">
+                <img
+                  src="images/Image.png"
+                  class="card-img-top"
+                  alt="estate name"
+                />
+              </div>
+              <!-- estate info -->
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="estate-price secondary fw-bold">
+                    1500 <span>ريال سعودي</span>
+                  </p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center my-2">
+                  <p class="estate-name card-title fw-semibold">
+                    برج المملكة – الرياض
+                  </p>
+                  <small class="estate-type text-muted">شقة للإيجار</small>
+                </div>
+                <p class="estate-location card-text main">
+                  <i class="bi bi-geo-alt"></i>
+                  <small>الرياض، شارع الملك فهد، برج المملكة، الطابق 10</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <!-- estate link -->
+              <a
+                href="estate-details.html"
+                aria-label="مشاهدة تفاصيل عقار اسم العقار"
+                class="link"
+              ></a>
+              
+              <div class="package-desc"> 
+                عقار متشارك 
+              </div>
+              <!-- estate img -->
+              <div class="estate-img">
+                <img
+                  src="images/Image-1.png"
+                  class="card-img-top"
+                  alt="estate name"
+                />
+              </div>
+              <!-- estate info -->
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="estate-price secondary fw-bold">
+                    1500 <span>ريال سعودي</span>
+                  </p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center my-2">
+                  <p class="estate-name card-title fw-semibold">
+                    برج المملكة – الرياض
+                  </p>
+                  <small class="estate-type text-muted">شقة للإيجار</small>
+                </div>
+                <p class="estate-location card-text main">
+                  <i class="bi bi-geo-alt"></i>
+                  <small>الرياض، شارع الملك فهد، برج المملكة، الطابق 10</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <!-- estate link -->
+              <a
+                href="estate-details.html"
+                aria-label="مشاهدة تفاصيل عقار اسم العقار"
+                class="link"
+              ></a>
+
+              <div class="package-desc"> 
+                عقار متزايد
+              </div>
+              
+              <!-- estate img -->
+              <div class="estate-img">
+                <img
+                  src="images/Image-2.png"
+                  class="card-img-top"
+                  alt="estate name"
+                />
+              </div>
+              <!-- estate info -->
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="estate-price secondary fw-bold">
+                    1500 <span>ريال سعودي</span>
+                  </p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center my-2">
+                  <p class="estate-name card-title fw-semibold">
+                    برج المملكة – الرياض
+                  </p>
+                  <small class="estate-type text-muted">شقة للإيجار</small>
+                </div>
+                <p class="estate-location card-text main">
+                  <i class="bi bi-geo-alt"></i>
+                  <small>الرياض، شارع الملك فهد، برج المملكة، الطابق 10</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <!-- estate link -->
+              <a
+                href="estate-details.html"
+                aria-label="مشاهدة تفاصيل عقار اسم العقار"
+                class="link"
+              ></a>
+              
+              <div class="package-desc"> 
+                عقار متزايد
+              </div>
+
+              <!-- estate img -->
+              <div class="estate-img">
+                <img
+                  src="images/Image.png"
+                  class="card-img-top"
+                  alt="estate name"
+                />
+              </div>
+              <!-- estate info -->
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="estate-price secondary fw-bold">
+                    1500 <span>ريال سعودي</span>
+                  </p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center my-2">
+                  <p class="estate-name card-title fw-semibold">
+                    برج المملكة – الرياض
+                  </p>
+                  <small class="estate-type text-muted">شقة للإيجار</small>
+                </div>
+                <p class="estate-location card-text main">
+                  <i class="bi bi-geo-alt"></i>
+                  <small>الرياض، شارع الملك فهد، برج المملكة، الطابق 10</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <!-- estate link -->
+              <a
+                href="estate-details.html"
+                aria-label="مشاهدة تفاصيل عقار اسم العقار"
+                class="link"
+              ></a>
+              
+              <div class="package-desc"> 
+                عقار متشارك 
+              </div>
+              <!-- estate img -->
+              <div class="estate-img">
+                <img
+                  src="images/Image-1.png"
+                  class="card-img-top"
+                  alt="estate name"
+                />
+              </div>
+              <!-- estate info -->
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="estate-price secondary fw-bold">
+                    1500 <span>ريال سعودي</span>
+                  </p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center my-2">
+                  <p class="estate-name card-title fw-semibold">
+                    برج المملكة – الرياض
+                  </p>
+                  <small class="estate-type text-muted">شقة للإيجار</small>
+                </div>
+                <p class="estate-location card-text main">
+                  <i class="bi bi-geo-alt"></i>
+                  <small>الرياض، شارع الملك فهد، برج المملكة، الطابق 10</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <!-- estate link -->
+              <a
+                href="estate-details.html"
+                aria-label="مشاهدة تفاصيل عقار اسم العقار"
+                class="link"
+              ></a>
+
+              <div class="package-desc"> 
+                عقار متزايد
+              </div>
+              
+              <!-- estate img -->
+              <div class="estate-img">
+                <img
+                  src="images/Image-2.png"
+                  class="card-img-top"
+                  alt="estate name"
+                />
+              </div>
+              <!-- estate info -->
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="estate-price secondary fw-bold">
+                    1500 <span>ريال سعودي</span>
+                  </p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center my-2">
+                  <p class="estate-name card-title fw-semibold">
+                    برج المملكة – الرياض
+                  </p>
+                  <small class="estate-type text-muted">شقة للإيجار</small>
+                </div>
+                <p class="estate-location card-text main">
+                  <i class="bi bi-geo-alt"></i>
+                  <small>الرياض، شارع الملك فهد، برج المملكة، الطابق 10</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="estates.html"
+          aria-label="المزيد"
+          class="main-outline-btn m-auto mt-4"
+        >
+          المزيد
+        </a>
+      </div>
+    </section>
+
+    <!-- discover section -->
+    <section class="discover-wrapper py-5">
+      <div class="container-fluid">
+        <div class="discover position-relative">
+          <div class="discover-bg"></div>
+          <div class="d-flex align-items-center">
+            <div class="discover-content">
+              <div class="about">
+                <div class="section-title">
+                  <p class="secDesc fw-bold secondary fs-4">
+                    أحدث العروض والإعلانات
+                  </p>
+                </div>
+                <div class="about-txt d-flex flex-column gap-3 my-4">
+                  <p>
+                    اكتشف أحدث العروض والإعلانات المميزة من شركتنا. نحن نقدم لك فرصة للحصول على أفضل العروض والتخفيضات على منتجاتنا وخدماتنا، بالإضافة إلى إعلانات حصرية لتحسين تجربتك معنا
+                  </p>
+                </div>
+                <a
+                  href="estates.html"
+                  aria-label="اكتشف أحدث العروض والإعلانات المميزة من شركتنا"
+                  class="main-outline-btn"
+                >
+                العقارات
+                </a>
+              </div>
+            </div>
+            <div class="discover-img col-6">
+              <img src="images/new-ads.png" class="w-100" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blogs section -->
+    <section class="blogs py-5">
+      <div class="container-fluid">
+        <div class="section-title text-center pb-4">
+          <h2 class="secDesc fw-bold secondary fs-3">
+            اكتشف آخر الأخبار والمقالات
+          </h2>
+        </div>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1">
+          <div class="col">
+            <div class="card">
+              <!-- blog link -->
+              <a
+                href="blog-details.html"
+                aria-label="الانتقال الى مقال بعنوان اسم المقال"
+                class="link"
+              ></a>
+              <!-- blog img -->
+              <div class="blog-img">
+                <img
+                  src="images/Image.png"
+                  class="card-img-top"
+                  alt="blog name"
+                />
+              </div>
+              <!-- blog info -->
+              <div class="card-body">
+                <span class="blog-date">5 سبتمبر 2022</span>
+                <p class="blog-name cut-text card-title fw-semibold fs-6 my-2">
+                  أحدث أخبار العقارات في السعودية
+                </p>
+                <p class="blog-description cut-text card-text text-muted">
+                  تابع آخر المقالات والاتجاهات في سوق العقارات السعودي. نقدم لك نصائح ومراجعات تساعدك في اتخاذ قرارات استثمارية ذكية في عالم العقارات
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <!-- blog link -->
+              <a
+                href="blog-details.html"
+                aria-label="الانتقال الى مقال بعنوان اسم المقال"
+                class="link"
+              ></a>
+              <!-- blog img -->
+              <div class="blog-img">
+                <img
+                  src="images/Image.png"
+                  class="card-img-top"
+                  alt="blog name"
+                />
+              </div>
+              <!-- blog info -->
+              <div class="card-body">
+                <span class="blog-date">5 سبتمبر 2022</span>
+                <p class="blog-name cut-text card-title fw-semibold fs-6 my-2">
+                  أحدث أخبار العقارات في السعودية
+                </p>
+                <p class="blog-description cut-text card-text text-muted">
+                  تابع آخر المقالات والاتجاهات في سوق العقارات السعودي. نقدم لك نصائح ومراجعات تساعدك في اتخاذ قرارات استثمارية ذكية في عالم العقارات
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <!-- blog link -->
+              <a
+                href="blog-details.html"
+                aria-label="الانتقال الى مقال بعنوان اسم المقال"
+                class="link"
+              ></a>
+              <!-- blog img -->
+              <div class="blog-img">
+                <img
+                  src="images/Image.png"
+                  class="card-img-top"
+                  alt="blog name"
+                />
+              </div>
+              <!-- blog info -->
+              <div class="card-body">
+                <span class="blog-date">5 سبتمبر 2022</span>
+                <p class="blog-name cut-text card-title fw-semibold fs-6 my-2">
+                  أحدث أخبار العقارات في السعودية
+                </p>
+                <p class="blog-description cut-text card-text text-muted">
+                  تابع آخر المقالات والاتجاهات في سوق العقارات السعودي. نقدم لك نصائح ومراجعات تساعدك في اتخاذ قرارات استثمارية ذكية في عالم العقارات
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="blogs.html"
+          aria-label="مشاهدة كل المقالات"
+          class="main-outline-btn m-auto mt-4"
+        >
+          المزيد
+        </a>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+      <!-- روابط الفوتر -->
+      <div class="footer-links bg-card py-4">
+        <div class="container-fluid">
+          <div class="row justify-content-between">
+            <!-- الشركة -->
+            <div class="col-12 col-lg-3">
+              <div class="footer-info">
+                <img
+                  src="images/logo.png"
+                  alt="شعار الشركة"
+                  class="img-fluid"
+                />
+                <p>
+                  نحن منصة إلكترونية متخصصة في عرض العقارات داخل المملكة، نقدم حلولاً ذكية ومبتكرة للبحث عن عقارات للبيع أو الإيجار بما يتناسب مع احتياجاتك وطموحاتك
+                </p>
+              </div>
+            </div>
+
+            <!-- خريطة الموقع -->
+            <div class="col-6 col-md-3 col-lg-auto mt-3">
+              <h4>خريطة الموقع</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="index.html"
+                    class="active"
+                    aria-label="الانتقال إلى الصفحة الرئيسية"
+                    >الرئيسية</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html" aria-label="الانتقال إلى صفحة من نحن"
+                    >من نحن</a
+                  >
+                </li>
+                <li>
+                  <a href="blogs.html" aria-label="الانتقال إلى صفحة المدونة"
+                    >المدونة</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html" aria-label="الانتقال إلى اتصل بنا"
+                    >اتصل بنا</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- روابط سريعة -->
+            <div class="col-6 col-md-3 col-lg-auto mt-3">
+              <h4>روابط سريعة</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="policy.html"
+                    aria-label="الانتقال إلى صفحة سياسة الخصوصية"
+                    >سياسة الخصوصية</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="terms.html"
+                    aria-label="الانتقال إلى صفحة الشروط والأحكام"
+                    > الشروط والأحكام</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="system.html"
+                    aria-label="الانتقال إلى صفحة شرح اليات نظام"
+                    >شرح اليات نظام</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="paid-servics.html"
+                    aria-label="الانتقال إلى صفحة المصداقية والخدمات المدفوعة"
+                    >المصداقية والخدمات المدفوعة</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- الاشتراك وتحديثات العقارات -->
+            <div class="col-12 col-md-5 col-lg-3 mt-3">
+              <h4>اشترك لتلقي تحديثات العقارات</h4>
+              <form action="">
+                <div class="input-group border my-3">
+                  <input
+                    type="email"
+                    class="form-control border-0"
+                    placeholder="البريد الإلكتروني"
+                    aria-label="إدخال البريد الإلكتروني"
+                    required
+                  />
+                </div>
+                <button
+                  type="submit"
+                  class="main-btn ms-auto mb-4"
+                  aria-label="إرسال البريد الإلكتروني"
+                >
+                  إرسال
+                </button>
+              </form>
+
+
+              <!-- وسائل التواصل الاجتماعي -->
+               <h4>تابعنا</h4>
+              <div
+                class="social d-flex justify-content-lg-start justify-content-center gap-3"
+              >
+                <a href="#" target="_blank" aria-label="رابط إلى تويتر">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="رابط إلى فيسبوك">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="رابط إلى لينكد إن">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="رابط إلى سناب شات">
+                  <i class="fa-brands fa-snapchat"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- الفوتر الفرعي -->
+      <div class="sub-footer py-2">
+        <p class="text-center mb-0">
+          <a
+            href="https://smartvision4p.com"
+            target="_blank"
+            class="d-flex align-items-center gap-2 justify-content-center text-white text-decoration-none"
+            aria-label="رابط إلى موقع شركة سمارت فيجن"
+          >
+            <span>تصميم وبرمجة شركة سمارت فيجن للبرمجيات</span>
+            <img src="images/smart-logo.svg" alt="شعار سمارت فيجن" />
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- jQuery script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- owl-carousel script -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- bootstrap script -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- nice select script -->
+    <script src="js/jquery.nice-select.min.js"></script>
+
+    <!-- fancybox script -->
+    <script src="js/jquery.fancybox.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
