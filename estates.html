@@ -72,7 +72,7 @@
                   <span>إنشاء حساب</span>
                 </a>
               </li>
-              <li>
+              <!-- <li>
                 <a
                   class="secondary"
                   href="login.html"
@@ -80,6 +80,17 @@
                 >
                   <i class="bi bi-person"></i>
                   <span>تسجيل دخول</span>
+                </a>
+              </li> -->
+              <!-- if auth -->
+              <li>
+                <a
+                  class="secondary"
+                  href="profile.html"
+                  aria-label="الاشعارات"
+                >
+                  <i class="bi bi-bell"></i>
+                  <span>الاشعارات</span>
                 </a>
               </li>
               <li>
@@ -197,7 +208,7 @@
     <section class="estates my-5 pb-5">
       <div class="container-fluid">
         <div class="row gx-lg-5">
-          <div class="col-5 col-lg-3 filter px-3">
+          <div class="col-5 col-lg-4 filter px-3">
             <div class="filter-header d-flex justify-content-between d-md-none">
               <p class="m-0 fw-bold fs-5">التصفيه</p>
               <button
@@ -215,7 +226,123 @@
               </div>
             </form>
             <div class="accordion accordion-flush" id="accordionFlushExample">
-              <!-- اين  -->
+              <!-- حال العقار -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button px-1 collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    حال العقار
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body px-1">
+                    <ul>
+                      <li>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="estate_condition"
+                            id="estate_condition1"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="estate_condition1"
+                          >
+                            بيع
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="estate_condition"
+                            id="estate_condition2"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="estate_condition2"
+                          >
+                            ايجار
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- فئة العقار -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button
+                    class="accordion-button px-1 collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                  فئة العقار
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFour"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body px-1">
+                    <ul>
+                      <li>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="estate_category"
+                            id="estate_category1"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="estate_category1"
+                          >
+                            عقار مزايدة
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="estate_category"
+                            id="estate_category2"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="estate_category2"
+                          >
+                            عقار مشاركة
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- اختر المدينة  -->
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
                   <button
@@ -226,7 +353,7 @@
                     aria-expanded="true"
                     aria-controls="flush-collapseOne"
                   >
-                    اين
+                  اختر المدينة
                   </button>
                 </h2>
                 <div
@@ -246,7 +373,7 @@
                             id="estate_where1"
                           />
                           <label class="form-check-label" for="estate_where1">
-                            اسم الدوله
+                            اسم المدينة
                           </label>
                         </div>
                       </li>
@@ -259,7 +386,7 @@
                             id="estate_where2"
                           />
                           <label class="form-check-label" for="estate_where2">
-                            اسم الدوله
+                            اسم المدينة
                           </label>
                         </div>
                       </li>
@@ -272,7 +399,7 @@
                             id="estate_where3"
                           />
                           <label class="form-check-label" for="estate_where3">
-                            اسم الدوله
+                            اسم المدينة
                           </label>
                         </div>
                       </li>
@@ -285,7 +412,7 @@
                             id="estate_where4"
                           />
                           <label class="form-check-label" for="estate_where4">
-                            اسم الدوله
+                            اسم المدينة
                           </label>
                         </div>
                       </li>
@@ -358,64 +485,6 @@
                   </div>
                 </div>
               </div>
-              <!-- حال العقار -->
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button
-                    class="accordion-button px-1 collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseThree"
-                  >
-                    حال العقار
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseThree"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingThree"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div class="accordion-body px-1">
-                    <ul>
-                      <li>
-                        <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="radio"
-                            name="estate_condition"
-                            id="estate_condition1"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="estate_condition1"
-                          >
-                            إيجار
-                          </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="radio"
-                            name="estate_condition"
-                            id="estate_condition2"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="estate_condition2"
-                          >
-                            تمليك
-                          </label>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
             </div>
             <button type="button" class="main-outline-btn w-100">تصفية</button>
           </div>
@@ -431,7 +500,7 @@
                       class="link"
                     ></a>
                     
-                    <div class="package-desc"> 
+                    <div class="estate-category"> 
                       عقار متزايد
                     </div>
       
@@ -472,7 +541,7 @@
                       class="link"
                     ></a>
                     
-                    <div class="package-desc"> 
+                    <div class="estate-category"> 
                       عقار متشارك 
                     </div>
                     <!-- estate img -->
@@ -512,7 +581,7 @@
                       class="link"
                     ></a>
       
-                    <div class="package-desc"> 
+                    <div class="estate-category"> 
                       عقار متزايد
                     </div>
                     
@@ -553,7 +622,7 @@
                       class="link"
                     ></a>
                     
-                    <div class="package-desc"> 
+                    <div class="estate-category"> 
                       عقار متزايد
                     </div>
       
@@ -594,7 +663,7 @@
                       class="link"
                     ></a>
                     
-                    <div class="package-desc"> 
+                    <div class="estate-category"> 
                       عقار متشارك 
                     </div>
                     <!-- estate img -->
@@ -634,7 +703,7 @@
                       class="link"
                     ></a>
       
-                    <div class="package-desc"> 
+                    <div class="estate-category"> 
                       عقار متزايد
                     </div>
                     

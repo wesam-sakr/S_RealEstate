@@ -392,9 +392,11 @@ ul {
 }
 
 .accordion-item .accordion-body {
-  padding-top: 0px !important;
-  color: #6B6B6B;
-  font-size: 1.15rem;
+  padding-block: 0px !important;
+  font-size: .95rem; 
+  font-weight: 400;
+  /* color: #6B6B6B;
+  */
 }
 
 /* + */
@@ -406,7 +408,8 @@ ul {
   inset-inline-start: -1rem;
   width: 30px;
   height: 30px;
-  color: var(--secondary);
+  background-color: var(--white);
+  color: var(--black);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -415,13 +418,12 @@ ul {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  border: 1px solid #d1dcd9;
 }
 
 /* - */
 .accordion-button:not(.collapsed)::after {
   content: "\F2EA";
-  color: var(--white);
-  background: var(--secondary);
 }
 
 /* inputs */
@@ -492,7 +494,8 @@ ul {
 }
 
 .main-outline-btn:hover {
-  background: var(--secondary) !important;
+  background: var(--main) !important;
+  border-color: var(--main);
   color: var(--white) !important;
 }
 
@@ -944,7 +947,7 @@ html[dir='ltr'] #filter{
   -o-border-radius: var(--card-raduis);
 }
 
-.package-desc {
+.estate-category {
   color: var(--white);
   background-color: var(--secondary);
   padding: .2rem .5rem;
@@ -959,7 +962,7 @@ html[dir='ltr'] #filter{
   -ms-border-radius:  4px ;
   -o-border-radius:  4px ;
 }
-.package-desc::before {
+.estate-category::before {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -1121,11 +1124,16 @@ html[lang='en'] .our-estates .badge {
 
 .filter .accordion-button {
   font-weight: bold;
+  font-size: 1.05rem;
 }
 
 .filter .input-group {
   border: 0.30000001192092896px solid #b5b5b54a;
-  border-radius: 10px;
+  border-radius: calc(var(--card-raduis) * .45);
+  -webkit-border-radius: calc(var(--card-raduis) * .45);
+  -moz-border-radius: calc(var(--card-raduis) * .45);
+  -ms-border-radius: calc(var(--card-raduis) * .45);
+  -o-border-radius: calc(var(--card-raduis) * .45);
 }
 
 .form-check-input {
@@ -1856,20 +1864,8 @@ footer .sub-footer span {
   .navbar-collapse.show .navbar-nav .nav-item {
     margin-block: 8px;
   }
-
-  .heroSec {
-    padding-block: 4rem 0;
-  }
-
-  /* hero section */
-  .heroSec .hero-image {
-    width: 100%;
-    position: relative;
-  }
-
-  .hero-content {
-    width: 78%;
-    margin-bottom: 2rem;
+  .discover-content {
+    padding: 3rem;
   }
 
 
@@ -1932,9 +1928,15 @@ footer .sub-footer span {
   :root {
     --gutter-x: 1.5rem;
   }
-
-  .header-hero-wrapper {
-    background-size: auto;
+  .top-nav .helper-pages {
+    gap: 8px;
+  }
+  .top-nav li:not(:last-child) a::after {
+    width: 4px;
+    height: 16px;
+}
+  .top-nav a {
+    font-size: .75rem;
   }
 
   .heroSec {
@@ -1942,8 +1944,15 @@ footer .sub-footer span {
     /* padding-block: 2rem 16rem; */
   }
 
-  .classification-content .btn {
-    padding: 6px 18px;
+  .heroSec .search-box {
+    max-width: 85%;
+    padding: .35rem;
+  }
+  .search-box button {
+    padding: 6px 14px !important;
+  }
+  .discover-content {
+    padding: 2rem 1.5rem;
   }
 
   .hero-content {
@@ -1963,7 +1972,6 @@ footer .sub-footer span {
     -o-transform: translate(var(--menu-offset));
   }
 
-  /* .classification  */
   .filter,
   .profile-nav {
     position: fixed;
@@ -1992,9 +2000,6 @@ footer .sub-footer span {
     align-items: flex-start;
   }
 
-  .classification-content {
-    padding: 2px 6px;
-  }
 
   .close-profile-nav,
   .close-filter {
@@ -2066,7 +2071,7 @@ footer .sub-footer span {
   }
 
   footer .sub-footer span {
-    font-size: 17px;
+    font-size: 14px;
   }
 
   footer .sub-footer img {

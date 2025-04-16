@@ -76,7 +76,7 @@
                   <span>إنشاء حساب</span>
                 </a>
               </li>
-              <li>
+              <!-- <li>
                 <a
                   class="secondary"
                   href="login.html"
@@ -84,6 +84,17 @@
                 >
                   <i class="bi bi-person"></i>
                   <span>تسجيل دخول</span>
+                </a>
+              </li> -->
+              <!-- if auth -->
+              <li>
+                <a
+                  class="secondary"
+                  href="profile.html"
+                  aria-label="الاشعارات"
+                >
+                  <i class="bi bi-bell"></i>
+                  <span>الاشعارات</span>
                 </a>
               </li>
               <li>
@@ -236,9 +247,9 @@
         <div class="row align-items-center gy-3 gx-md-5 mb-4">
           <div class="col-lg-6">
             <div class="section-title">
-              <p class="secDesc fw-bold secondary fs-4">
+              <h2 class="secDesc fw-bold secondary fs-4">
                 تعرف على عقارات السعودية
-              </p>
+              </h2>
             </div>
             <div class="about-txt d-flex flex-column gap-3 my-4">
               <p>
@@ -256,19 +267,19 @@
               المزيد
             </a>
           </div>
-          <div class="col-md-9 col-lg-6">
+          <div class="col-lg-6">
             <img src="images/about.png" class="w-100" alt="" />
           </div>
         </div>
         <div class="row align-items-center gy-3 gx-md-5">
-          <div class="col-md-9 col-lg-6">
+          <div class="col-lg-6">
             <img src="images/why.png" class="w-100" alt="" />
           </div>
           <div class="col-lg-6">
             <div class="section-title">
-              <p class="secDesc fw-bold secondary fs-4">
+              <h2 class="secDesc fw-bold secondary fs-4">
                 لماذا عقارات السعودية هو خيارك المناسب ؟  
-              </p>
+              </h2>
             </div>
             <div class="about-txt d-flex flex-column gap-3 my-4">
               <p>
@@ -295,7 +306,7 @@
     <div class="features py-5">
       <div class="container-fluid">
         <div class="row gy-3">
-          <div class="col-md-4">
+          <div class="col-lg-4">
             <div class="feature">
               <div class="feature-icon">
                 <img src="images/step1.png" alt="" />
@@ -308,7 +319,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4">
             <div class="feature">
               <div class="feature-icon">
                 <img src="images/step2.png" alt="" />
@@ -321,7 +332,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4">
             <div class="feature">
               <div class="feature-icon">
                 <img src="images/step3.png" alt="" />
@@ -342,7 +353,7 @@
     <section class="our-estates py-5">
       <div class="container-fluid">
         <div class="section-title text-center pb-4">
-          <p class="secDesc fw-bold secondary fs-3">اكتشف عقارك المثالي</p>
+          <h2 class="secDesc fw-bold secondary fs-4">اكتشف عقارك المثالي</h2>
         </div>
         <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 gy-4">
           <div class="col">
@@ -354,7 +365,7 @@
                 class="link"
               ></a>
               
-              <div class="package-desc"> 
+              <div class="estate-category"> 
                 عقار متزايد
               </div>
 
@@ -395,7 +406,7 @@
                 class="link"
               ></a>
               
-              <div class="package-desc"> 
+              <div class="estate-category"> 
                 عقار متشارك 
               </div>
               <!-- estate img -->
@@ -435,7 +446,7 @@
                 class="link"
               ></a>
 
-              <div class="package-desc"> 
+              <div class="estate-category"> 
                 عقار متزايد
               </div>
               
@@ -476,7 +487,7 @@
                 class="link"
               ></a>
               
-              <div class="package-desc"> 
+              <div class="estate-category"> 
                 عقار متزايد
               </div>
 
@@ -517,7 +528,7 @@
                 class="link"
               ></a>
               
-              <div class="package-desc"> 
+              <div class="estate-category"> 
                 عقار متشارك 
               </div>
               <!-- estate img -->
@@ -557,7 +568,7 @@
                 class="link"
               ></a>
 
-              <div class="package-desc"> 
+              <div class="estate-category"> 
                 عقار متزايد
               </div>
               
@@ -605,13 +616,13 @@
       <div class="container-fluid">
         <div class="discover position-relative">
           <div class="discover-bg"></div>
-          <div class="d-flex align-items-center">
+          <div class="d-flex flex-lg-row flex-column-reverse align-items-center">
             <div class="discover-content">
               <div class="about">
                 <div class="section-title">
-                  <p class="secDesc fw-bold secondary fs-4">
+                  <h2 class="secDesc fw-bold secondary fs-4">
                     أحدث العروض والإعلانات
-                  </p>
+                  </h2>
                 </div>
                 <div class="about-txt d-flex flex-column gap-3 my-4">
                   <p>
@@ -627,7 +638,7 @@
                 </a>
               </div>
             </div>
-            <div class="discover-img col-6">
+            <div class="discover-img col-lg-6">
               <img src="images/new-ads.png" class="w-100" alt="">
             </div>
           </div>
@@ -639,7 +650,7 @@
     <section class="blogs py-5">
       <div class="container-fluid">
         <div class="section-title text-center pb-4">
-          <h2 class="secDesc fw-bold secondary fs-3">
+          <h2 class="secDesc fw-bold secondary fs-4">
             اكتشف آخر الأخبار والمقالات
           </h2>
         </div>
