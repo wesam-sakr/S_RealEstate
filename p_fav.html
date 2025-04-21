@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Negmet Alsharq RealEstate</title>
+    <title>عقارات السعودية</title>
     <link rel="icon" href="images/fav.svg" />
 
     <!-- font awesome cdn link  -->
@@ -17,7 +17,11 @@
     />
 
     <!-- Bootstrap link  -->
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" id="bootstrap-style">
+    <link
+      rel="stylesheet"
+      href="css/bootstrap.rtl.min.css"
+      id="bootstrap-style"
+    />
     <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
 
     <!-- owl-carousel link -->
@@ -35,51 +39,17 @@
   </head>
 
   <body>
-    <!-- cursor -->
-    <div class="center"></div>
-    <div class="outerCircle"></div>
-    <!-- fixed snapchat icon -->
-    <div class="fixed-icon">
-      <a href="#" aria-label="go to page up" id="scrollUp">
-        <i class="fa-solid fa-chevron-up"></i>
-      </a>
-      <a
-        href=""
-        class="tiktok"
-        target="_blank"
-        aria-label="الذهاب الى حسابنا عبر واتساب"
-        >
-        <i class="fa-brands fa-tiktok"></i>
-      </a>
-      <a
-        href=""
-        class="whatsapp"
-        target="_blank"
-        aria-label="الذهاب الى حسابنا عبر واتساب"
-        >
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
-      <a
-        href=""
-        class="snapchat"
-        target="_blank"
-        aria-label="الذهاب الى حسابنا عبر سناب شات"
-      >
-        <i class="fa-brands fa-snapchat fa-shake"></i>
-      </a>
-    </div>
-
     <header>
       <!-- الشريط العلوي -->
-      <nav class="navbar top-nav p-0">
+      <nav class="navbar top-nav">
         <div class="container-fluid">
           <div
             class="helper-links w-100 d-flex align-items-center justify-content-between py-2"
           >
-            <ul class="helper-pages m-0 d-flex align-items-center">
+            <ul class="helper-pages m-0 d-flex gap-2 align-items-center">
               <li class="d-md-block d-none">
-                <a href="help.html" aria-label="الذهاب إلى الأسئلة الشائعة">
-                  <span>الأسئلة الشائعة</span>
+                <a href="system.html" aria-label="الذهاب إلى  شرح اليات نظام">
+                  <span>شرح اليات نظام</span>
                 </a>
               </li>
               <li class="d-md-block d-none">
@@ -96,19 +66,42 @@
             </ul>
             <ul class="helper-pages m-0 d-flex align-items-center">
               <li>
-                <a href="register.html" aria-label="إنشاء حساب جديد">
+                <a
+                  class="secondary"
+                  href="register.html"
+                  aria-label="إنشاء حساب جديد"
+                >
                   <i class="bi bi-box-arrow-in-left"></i>
                   <span>إنشاء حساب</span>
                 </a>
               </li>
-              <li>
-                <a href="login.html" aria-label="تسجيل الدخول">
+              <!-- <li>
+                <a
+                  class="secondary"
+                  href="login.html"
+                  aria-label="تسجيل الدخول"
+                >
                   <i class="bi bi-person"></i>
                   <span>تسجيل دخول</span>
                 </a>
+              </li> -->
+              <!-- if auth -->
+              <li>
+                <a
+                  class="secondary"
+                  href="profile.html"
+                  aria-label="الاشعارات"
+                >
+                  <i class="bi bi-bell"></i>
+                  <span>الاشعارات</span>
+                </a>
               </li>
               <li>
-                <a href="profile.html" aria-label="الملف الشخصي">
+                <a
+                  class="secondary"
+                  href="profile.html"
+                  aria-label="الملف الشخصي"
+                >
                   <i class="bi bi-person"></i>
                   <span>الملف الشخصي</span>
                 </a>
@@ -121,14 +114,14 @@
       <nav class="navbar main-nav navbar-expand-lg top-0">
         <div class="container-fluid">
           <a class="navbar-brand m-0" href="index.html">
-            <img src="images/logo.svg" alt="Negmet Alsharq RealEstate Logo" />
+            <img src="images/logo.png" alt="Saudi Real Estate Logo" />
           </a>
           <div
             class="collapse navbar-collapse justify-content-between align-items-center"
             id="navbarSupportedContent"
           >
             <!-- روابط القائمة -->
-            <ul class="navbar-nav gap-lg-4 mb-0">
+            <ul class="navbar-nav gap-xl-3 mb-0">
               <li class="nav-item">
                 <a
                   class="nav-link"
@@ -147,7 +140,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link"
+                  class="nav-link active"
                   href="estates.html"
                   aria-label="الذهاب إلى صفحة العقارات"
                   >العقارات</a
@@ -177,8 +170,8 @@
                   type="search"
                   name="reference_number"
                   class="form-control"
-                  placeholder="بحث برقم تعريف العقار"
-                  aria-label="بحث برقم تعريف العقار"
+                  placeholder="بحث بكود العقار"
+                  aria-label="بحث بكود العقار"
                   required
                 />
                 <button type="submit">
@@ -203,12 +196,13 @@
     </header>
 
     <!-- breadcrumb -->
-    <section class="">
+    <section class="heroSec position-relative breadcrumb-wrapper">
+      <div class="overlay"></div>
       <div class="container-fluid">
-        <div class="d-flex py-4 align-items-center breadcrumb border-bottom">
-          <a href="index.html" class="fw-semibold fs-5"> الرئيسية</a>
-          <i class="fa-solid fa-angles-left mx-2 text-muted"></i>
-          <p class="fw-semibold secondary fs-5 mb-0">الملف الشخصي</p>
+        <div class="d-flex align-items-center justify-content-center breadcrumb">
+          <a href="index.html" class="fs-6 text-white"> الرئيسية</a>
+          <i class="fa-solid fa-angles-left mx-2"></i>
+          <h2 class="fw-semibold fs-5 mb-0">العقارات</h2>
         </div>
       </div>
     </section>
@@ -401,19 +395,15 @@
           <div class="row justify-content-between">
             <!-- الشركة -->
             <div class="col-12 col-lg-3">
-              <div class="footer-images">
+              <div class="footer-info">
                 <img
-                  src="images/logo.svg"
+                  src="images/logo.png"
                   alt="شعار الشركة"
                   class="img-fluid"
                 />
-                <a href="images/license/fal_license.pdf" target="_blank">
-                  <img
-                    src="images/fal.png"
-                    class="w-100 mt-4"
-                    alt="رمز الاستجابة السريعة"
-                  />
-                </a>
+                <p>
+                  نحن منصة إلكترونية متخصصة في عرض العقارات داخل المملكة، نقدم حلولاً ذكية ومبتكرة للبحث عن عقارات للبيع أو الإيجار بما يتناسب مع احتياجاتك وطموحاتك
+                </p>
               </div>
             </div>
 
@@ -422,7 +412,9 @@
               <h4>خريطة الموقع</h4>
               <ul class="list-unstyled">
                 <li>
-                  <a href="index.html" aria-label="الانتقال إلى الصفحة الرئيسية"
+                  <a
+                    href="index.html"
+                    aria-label="الانتقال إلى الصفحة الرئيسية"
                     >الرئيسية</a
                   >
                 </li>
@@ -432,13 +424,13 @@
                   >
                 </li>
                 <li>
-                  <a href="estates.html" aria-label="الانتقال إلى صفحة العقارات"
-                    >العقارات</a
+                  <a href="blogs.html" aria-label="الانتقال إلى صفحة المدونة"
+                    >المدونة</a
                   >
                 </li>
                 <li>
-                  <a href="blogs.html" aria-label="الانتقال إلى صفحة المدونة"
-                    >المدونة</a
+                  <a href="contact.html" aria-label="الانتقال إلى اتصل بنا"
+                    >اتصل بنا</a
                   >
                 </li>
               </ul>
@@ -457,23 +449,23 @@
                 </li>
                 <li>
                   <a
-                    href="common-que.html"
-                    aria-label="الانتقال إلى صفحة الأسئلة الشائعة"
-                    >الأسئلة الشائعة</a
+                    href="terms.html"
+                    aria-label="الانتقال إلى صفحة الشروط والأحكام"
+                    > الشروط والأحكام</a
                   >
                 </li>
                 <li>
                   <a
-                    href="contact.html"
-                    aria-label="الانتقال إلى صفحة تواصل معنا"
-                    >تواصل معنا</a
+                    href="system.html"
+                    aria-label="الانتقال إلى صفحة شرح اليات نظام"
+                    >شرح اليات نظام</a
                   >
                 </li>
                 <li>
                   <a
-                    href="login.html"
-                    aria-label="الانتقال إلى صفحة تسجيل الدخول"
-                    >تسجيل الدخول</a
+                    href="paid-servics.html"
+                    aria-label="الانتقال إلى صفحة المصداقية والخدمات المدفوعة"
+                    >المصداقية والخدمات المدفوعة</a
                   >
                 </li>
               </ul>
@@ -483,7 +475,7 @@
             <div class="col-12 col-md-5 col-lg-3 mt-3">
               <h4>اشترك لتلقي تحديثات العقارات</h4>
               <form action="">
-                <div class="input-group border mb-4">
+                <div class="input-group border my-3">
                   <input
                     type="email"
                     class="form-control border-0"
@@ -491,29 +483,19 @@
                     aria-label="إدخال البريد الإلكتروني"
                     required
                   />
-                  <button
-                    type="submit"
-                    class="input-group-text btn-sm border-0 bg-white main fs-5"
-                    aria-label="إرسال البريد الإلكتروني"
-                  >
-                    إرسال
-                  </button>
                 </div>
+                <button
+                  type="submit"
+                  class="main-btn ms-auto mb-4"
+                  aria-label="إرسال البريد الإلكتروني"
+                >
+                  إرسال
+                </button>
               </form>
 
-              <div id="map" class="rounded-3 my-3 overflow-hidden">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.134911905268!2d31.394038524568394!3d31.050343574432617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79d99ef7ea253%3A0xe92319f27469b714!2z2LPZhdin2LHYqiDZgdmK2KzZhiDZhNiq2LXZhdmK2YUg2YjYqNix2YXYrNipINin2YTZhdmI2KfZgti5!5e0!3m2!1sar!2seg!4v1737894170625!5m2!1sar!2seg"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                  aria-label="خريطة موقع الشركة"
-                >
-                </iframe>
-              </div>
 
               <!-- وسائل التواصل الاجتماعي -->
+               <h4>تابعنا</h4>
               <div
                 class="social d-flex justify-content-lg-start justify-content-center gap-3"
               >
