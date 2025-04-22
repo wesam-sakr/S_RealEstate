@@ -140,7 +140,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link active"
+                  class="nav-link"
                   href="estates.html"
                   aria-label="الذهاب إلى صفحة العقارات"
                   >العقارات</a
@@ -202,7 +202,7 @@
         <div class="d-flex align-items-center justify-content-center breadcrumb">
           <a href="index.html" class="fs-6 text-white"> الرئيسية</a>
           <i class="fa-solid fa-angles-left mx-2"></i>
-          <h2 class="fw-semibold fs-5 mb-0">العقارات</h2>
+          <h2 class="fw-semibold fs-5 mb-0">الملف الشخصي</h2>
         </div>
       </div>
     </section>
@@ -223,136 +223,121 @@
 
         <div class="row d-flex justify-content-between align-items-start">
           <div class="profile-nav col col-md-5 col-lg-3" id="profile-nav">
+            <div class="profile-wrapper">
+              <button class="close-profile-nav" data-close=".profile-nav">
+                <i class="bi bi-x-lg"></i>
+              </button>
+  
+              <!-- profile title -->
+              <div class="personal-title text-md-center fs-4">الملف الشخصي</div>
+              <!-- profile nav -->
+              <div class="nav flex-column nav-pills">
+                <!-- المعلومات الشخصية -->
+                <a href="profile.html" class="nav-link">
+                  بياناتي 
+                </a>
+  
+                <!-- تعيين كلمة المرور -->
+                <a href="p_changePass.html" class="nav-link active">
+                  تغيير كلمة المرور
+                </a>
+  
+                <!-- بطاقتي -->
+                <a href="p_cards.html" class="nav-link">
+                  بطاقتي
+                </a>
 
-            <button class="close-profile-nav" data-close=".profile-nav">
-              <i class="bi bi-x-lg"></i>
-            </button>
+                <!-- إضافة عقار -->
+                <a href="p_addEstate.html" class="nav-link">
+                  إضافة عقار
+                </a>
 
-            <!-- profile title -->
-            <div class="personal-title text-md-center fs-4">الملف الشخصي</div>
-            <!-- profile nav -->
-            <div class="nav flex-column nav-pills">
-              <!-- المعلومات الشخصية -->
-              <a href="profile.html" class="nav-link">
-                <i class="bi bi-person"></i>
-                المعلومات الشخصيه
-              </a>
+                <!-- إدارة عقاراتي -->
+                <a href="p_estateControl.html" class="nav-link">
+                  إدارة عقاراتي
+                </a>
 
-              <!-- تعيين كلمة المرور -->
-              <a href="p_changePass.html" class="nav-link active">
-                <i class="bi bi-lock"></i>
-                تغيير كلمة المرور
-              </a>
+              </div>
+              <!--profile log out button -->
+              <button class="log-out btn d-block w-100 mt-1 fs-5" type="button">
+                <i class="bi bi-box-arrow-right"></i>
+                تسجيل الخروج
+              </button>
 
-              <!-- المفضلة -->
-              <a href="p_fav.html" class="nav-link">
-                <i class="bi bi-heart"></i>
-                المفضلة
-              </a>
             </div>
-            <!--profile log out button -->
-            <button class="log-out btn d-block w-100 mt-1 fs-5" type="button">
-              <i class="bi bi-box-arrow-right"></i>
-              تسجيل الخروج
-            </button>
+
           </div>
 
           <!-- profile data col -->
           <div class="profile-data col col-md-7 col-lg-9">
-            <form action="">
-              <div class="d-flex align-items-center gap-3 mb-4">
-                <!-- profile-picture -->
-                <div class="profile-pic position-relative bg-light">
-                  <img class="w-100" src="images/wesam.jpg" alt="" id="photo" />
-                </div>
-                <p class="main fw-bold fs-5">العميل نجمة الشرق</p>
-              </div>
-
-              <div class="mb-4">
-                <div class="input-group border mb-2">
-                  <button
-                    type="button"
-                    class="input-group-text bg-white fs-4 pass"
-                    title="show pass"
-                    aria-label="اظهار كلمة المرور"
-                  >
-                    <i class="bi bi-lock"></i>
-                  </button>
-                  <div class="form-floating">
-                    <input
-                      type="password"
-                      class="form-control ps-0"
-                      id="InputPassword"
-                      placeholder="كلمة المرور"
-                      required
-                    />
-                    <label for="InputPassword" class="ps-0"
-                      >كلمة المرور *</label
-                    >
+            <div class="profile-wrapper">
+              <form action="">
+                <div class="d-flex align-items-center gap-3 mb-5 border-bottom pb-4">
+                  <!-- profile-picture -->
+                  <div class="profile-pic position-relative bg-light">
+                    <img class="w-100" src="images/wesam.jpg" alt="" id="photo" />
+                    <div class="profile-pic-icon">
+                      <i class="bi bi-camera-fill"></i>
+                    </div>
+                    <input type="file" id="file" name="" accept="image/*" />
+                  </div>
+                  <div>
+                    <p class="fw-bold fs-5 mb-3">اسم المستخدم</p>
+                    <p class="text-muted">@username@mail.com</p>
                   </div>
                 </div>
-                <a
-                  href="forgot-pass.html"
-                  class="text-decoration-underline main"
-                  aria-label="هل نسيت كلمة المرور؟ الذهاب لاعادة التعيين"
-                >
-                  هل نسيت كلمة المرور؟
-                </a>
-              </div>
+                
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group mb-4">
+                      <label for=""> كلمة المرور الحالية</label>
+                      <div class="input-group border mb-3">
+                        <input type="password" class="form-control" id="InputPassword" placeholder="" required="">
+                        <button type="button" class="input-group-text fs-4 pass" title="show pass" aria-label="اظهار كلمة المرور">
+                          <i class="bi bi-lock"></i>
+                        </button>
+                      </div>
+    
+                      <a href="forgot-pass.html" class="text-decoration-underline" aria-label="هل نسيت كلمة المرور؟ الذهاب لاعادة التعيين">
+                        هل نسيت كلمة المرور؟
+                      </a>
+                    </div>
+                  </div>
 
-              <div class="input-group border mb-4">
-                <button
-                  type="button"
-                  class="input-group-text bg-white fs-4 pass"
-                  title="show pass"
-                  aria-label="اظهار كلمة المرور"
-                >
-                  <i class="bi bi-lock"></i>
-                </button>
-                <div class="form-floating">
-                  <input
-                    type="password"
-                    class="form-control ps-0"
-                    id="InputNewPassword"
-                    placeholder="كلمة المرور الجديدة"
-                    required
-                  />
-                  <label for="InputNewPassword" class="ps-0">كلمة المرور الجديدة</label>
+                  <div class="col-md-6">
+                    <div class="form-group mb-4">
+                      <label for="">كلمة المرور الجديدة</label>
+                      <div class="input-group border mb-3">
+                        <input type="password" class="form-control" id="" placeholder="" required="">
+                        <button type="button" class="input-group-text fs-4 pass" title="show pass" aria-label="اظهار كلمة المرور">
+                          <i class="bi bi-lock"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group mb-4">
+                      <label for="">تأكيد كلمة المرور الجديدة</label>
+                      <div class="input-group border mb-3">
+                        <input type="password" class="form-control" id="" placeholder="" required="">
+                        <button type="button" class="input-group-text fs-4 pass" title="show pass" aria-label="اظهار كلمة المرور">
+                          <i class="bi bi-lock"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-
-              <div class="input-group border mb-4">
+                <!-- ارسال -->
                 <button
-                  type="button"
-                  class="input-group-text bg-white fs-4 pass"
-                  title="show pass"
-                  aria-label="اظهار كلمة المرور"
+                  type="submit"
+                  class="btn main-outline-btn px-5 py-2 mb-3"
+                  aria-label="تحديث المعلومات الشخصية"
                 >
-                  <i class="bi bi-lock"></i>
+                حفظ التعديلات
                 </button>
-                <div class="form-floating">
-                  <input
-                    type="password"
-                    class="form-control ps-0"
-                    id="InputNewPasswordConfirm"
-                    placeholder="تأكيد كلمة المرور الجديدة"
-                    required
-                  />
-                  <label for="InputNewPasswordConfirm" class="ps-0">
-                    تأكيد كلمة المرور الجديدة
-                  </label>
-                </div>
-              </div>
-
-              <!-- ارسال -->
-              <button
-                type="submit"
-                class="btn main-btn px-5 py-2 mb-3"
-                aria-label="تحديث المعلومات الشخصية"
-              >
-                تحديث
-              </button>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
