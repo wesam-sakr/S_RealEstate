@@ -262,565 +262,559 @@
           <!-- profile data col -->
           <div class="profile-data col col-md-7 col-lg-9">
             <form action="">
-                <div class="profile-wrapper mb-3">
-                  <div class="section-title d-flex align-items-center gap-2 mb-4">
-                    <div class="section-img">
-                      <img src="images/1.svg" alt="" />
-                    </div>
-                    <h5 class="fw-bold m-0">تفاصيل العقار</h5>
+              <div class="profile-wrapper mb-3">
+                <div class="section-title d-flex align-items-center gap-2 mb-4">
+                  <div class="section-img">
+                    <img src="images/1.svg" alt="" />
                   </div>
-                  <div class="builder-options w-75">
-                    <div class="builder-option">
-                      <div class="builder-option-name">
-                        <h5>حدد الغرض <span class="text-danger">*</span></h5>
-                      </div>
-                      <input
-                        name="purpose"
-                        type="radio"
-                        class="btn-check"
-                        id="buy"
-                        value="sale"
-                        autocomplete="off"
-                      />
-                      <label class="btn" for="buy">
-                        <img src="images/2.svg" alt="" />
-                        <span>بيع</span>
-                      </label>
-    
-                      <input
-                        name="purpose"
-                        type="radio"
-                        class="btn-check"
-                        id="rent"
-                        value="rent"
-                        autocomplete="off"
-                      />
-                      <label class="btn" for="rent">
-                        <img src="images/2.svg" alt="" />
-                        <span>ايجار</span>
-                      </label>
-                    </div>
-    
-                    <div class="builder-option">
-                      <div class="builder-option-name mb-0">
-                        <h5>حدد نوع العقار<span class="text-danger">*</span></h5>
-                      </div>
-                      <ul
-                        class="nav nav-tabs border-bottom mb-3"
-                        id="myTab"
-                        role="tablist"
-                      >
-                        <li class="nav-item" role="presentation">
-                          <button
-                            class="nav-link active"
-                            id="home-tab"
-                            data-bs-toggle="tab"
-                            data-bs-target="#home-tab-pane"
-                            type="button"
-                            role="tab"
-                            aria-controls="home-tab-pane"
-                            aria-selected="true"
-                          >
-                            مسكن
-                          </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button
-                            class="nav-link"
-                            id="profile-tab"
-                            data-bs-toggle="tab"
-                            data-bs-target="#profile-tab-pane"
-                            type="button"
-                            role="tab"
-                            aria-controls="profile-tab-pane"
-                            aria-selected="false"
-                          >
-                            قطع أرض
-                          </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button
-                            class="nav-link"
-                            id="contact-tab"
-                            data-bs-toggle="tab"
-                            data-bs-target="#contact-tab-pane"
-                            type="button"
-                            role="tab"
-                            aria-controls="contact-tab-pane"
-                            aria-selected="false"
-                          >
-                            تجاري
-                          </button>
-                        </li>
-                      </ul>
-                      <div class="tab-content" id="myTabContent">
-                        <div
-                          class="tab-pane fade show active"
-                          id="home-tab-pane"
-                          role="tabpanel"
-                          aria-labelledby="home-tab"
-                          tabindex="0"
-                        >
-                          <input
-                            name="aqar-type"
-                            type="radio"
-                            class="btn-check"
-                            id="apartment"
-                            value="apartment"
-                            autocomplete="off"
-                          />
-                          <label class="btn" for="apartment">
-                            <span>شقة</span>
-                          </label>
-    
-                          <input
-                            name="aqar-type"
-                            type="radio"
-                            class="btn-check"
-                            id="villa"
-                            value="villa"
-                            autocomplete="off"
-                          />
-                          <label class="btn" for="villa">
-                            <span>فيلا</span>
-                          </label>
-                        </div>
-                        <div
-                          class="tab-pane fade"
-                          id="profile-tab-pane"
-                          role="tabpanel"
-                          aria-labelledby="profile-tab"
-                          tabindex="0"
-                        >
-                          ...
-                        </div>
-                        <div
-                          class="tab-pane fade"
-                          id="contact-tab-pane"
-                          role="tabpanel"
-                          aria-labelledby="contact-tab"
-                          tabindex="0"
-                        >
-                          ...
-                        </div>
-                      </div>
-                    </div>
-    
-                    <div class="builder-option">
-                      <div class="builder-option-name col-md-6">
-                        <h5>العنوان<span class="text-danger">*</span></h5>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <select
-                              name=""
-                              class="form-control nice-select"
-                              required=""
-                            >
-                              <option value="" hidden>المنطقة / الحي</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <select
-                              name=""
-                              class="form-control nice-select"
-                              required=""
-                            >
-                              <option value="" hidden>المدينة</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <!-- add map to select location -->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <h5 class="fw-bold m-0">تفاصيل العقار</h5>
                 </div>
-    
-                <div class="profile-wrapper mb-3">
-                  <div class="section-title d-flex align-items-center gap-2 mb-4">
-                    <div class="section-img">
-                      <img src="images/1.svg" alt="" />
+                <div class="builder-options w-75">
+                  <div class="builder-option">
+                    <div class="builder-option-name">
+                      <h5>حدد الغرض <span class="text-danger">*</span></h5>
                     </div>
-                    <h5 class="fw-bold m-0">الميزات والمرافق</h5>
+                    <input
+                      name="purpose"
+                      type="radio"
+                      class="btn-check"
+                      id="buy"
+                      value="sale"
+                      autocomplete="off"
+                    />
+                    <label class="btn" for="buy">
+                      <img src="images/2.svg" alt="" />
+                      <span>بيع</span>
+                    </label>
+
+                    <input
+                      name="purpose"
+                      type="radio"
+                      class="btn-check"
+                      id="rent"
+                      value="rent"
+                      autocomplete="off"
+                    />
+                    <label class="btn" for="rent">
+                      <img src="images/2.svg" alt="" />
+                      <span>ايجار</span>
+                    </label>
                   </div>
-                  <div class="builder-options w-75">
-                    <div class="builder-option">
-                      <div class="builder-option-name">
-                        <h5>مساحة العقار <span class="text-danger">*</span></h5>
-                      </div>
-                      <input
-                        name=""
-                        type="text"
-                        class="form-control"
-                        placeholder="متر مربع 250"
-                      />
+
+                  <div class="builder-option">
+                    <div class="builder-option-name mb-0">
+                      <h5>حدد نوع العقار<span class="text-danger">*</span></h5>
                     </div>
-    
-                    <div class="builder-option">
-                      <div class="builder-option-name">
-                        <h5>غرف النوم<span class="text-danger">*</span></h5>
-                      </div>
-    
-                      <input
-                        name="bedroom"
-                        type="radio"
-                        class="btn-check"
-                        id="studio"
-                        value="studio"
-                        autocomplete="off"
-                      />
-                      <label class="btn px-4" for="studio">
-                        <span>ستوديو</span>
-                      </label>
-    
-                      <input
-                        name="bedroom"
-                        type="radio"
-                        class="btn-check"
-                        id="bedroom1"
-                        value="1"
-                        autocomplete="off"
-                      />
-                      <label class="btn px-4" for="bedroom1">
-                        <span>1</span>
-                      </label>
-    
-                      <input
-                        name="bedroom"
-                        type="radio"
-                        class="btn-check"
-                        id="bedroom2"
-                        value="2"
-                        autocomplete="off"
-                      />
-                      <label class="btn px-4" for="bedroom2">
-                        <span>2</span>
-                      </label>
-    
-                      <input
-                        name="bedroom"
-                        type="radio"
-                        class="btn-check"
-                        id="bedroom3"
-                        value="3"
-                        autocomplete="off"
-                      />
-                      <label class="btn px-4" for="bedroom3">
-                        <span>3</span>
-                      </label>
-    
-                      <input
-                        name="bedroom"
-                        type="radio"
-                        class="btn-check"
-                        id="bedroom4"
-                        value="4"
-                        autocomplete="off"
-                      />
-                      <label class="btn px-4" for="bedroom4">
-                        <span>4</span>
-                      </label>
-                    </div>
-    
-                    <div class="builder-option">
-                      <div class="builder-option-name">
-                        <h5>الحمامات<span class="text-danger">*</span></h5>
-                      </div>
-                      <input
-                        name="bathroom"
-                        type="radio"
-                        class="btn-check"
-                        id="bathroom1"
-                        value="1"
-                        autocomplete="off"
-                      />
-                      <label class="btn px-4" for="bathroom1">
-                        <span>1</span>
-                      </label>
-    
-                      <input
-                        name="bathroom"
-                        type="radio"
-                        class="btn-check"
-                        id="bathroom2"
-                        value="2"
-                        autocomplete="off"
-                      />
-                      <label class="btn px-4" for="bathroom2">
-                        <span>2</span>
-                      </label>
-    
-                      <input
-                        name="bathroom"
-                        type="radio"
-                        class="btn-check"
-                        id="bathroom3"
-                        value="3"
-                        autocomplete="off"
-                      />
-                      <label class="btn px-4" for="bathroom3">
-                        <span>3</span>
-                      </label>
-    
-                      <input
-                        name="bathroom"
-                        type="radio"
-                        class="btn-check"
-                        id="bathroom4"
-                        value="4"
-                        autocomplete="off"
-                      />
-                      <label class="btn px-4" for="bathroom4">
-                        <span>4</span>
-                      </label>
-                    </div>
-    
-                    <div class="builder-option">
-                      <div class="builder-option-name">
-                        <h5>السعر المطلوب <span class="text-danger">*</span></h5>
-                      </div>
-                      <input
-                        name=""
-                        type="text"
-                        class="form-control"
-                        placeholder="ريال سعودي 1600000"
-                      />
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="profile-wrapper mb-3">
-                  <div class="section-title d-flex align-items-center gap-2 mb-4">
-                    <div class="section-img">
-                      <img src="images/1.svg" alt="" />
-                    </div>
-                    <h5 class="fw-bold m-0">تحميل صور وفيديو العقار</h5>
-                  </div>
-                  <div class="builder-options w-75">
-                    <div class="builder-option">
-                      <div class="builder-option-name">
-                        <h5>
-                          تحميل صور العقار الخاص بك
-                          <span class="text-danger">*</span>
-                        </h5>
-                      </div>
-                      <div class="upload-wrapper mb-3">
-                        <div class="upload__box">
-                          <div class="upload__btn-box row align-items-center">
-                            <div
-                              class="builder-option-name d-flex gap-3 align-items-center mb-3"
-                            >
-                              <i class="fa-regular fa-image"></i>
-    
-                              <label class="upload__btn m-0">
-                                <span>تحميل صور</span>
-                                <input
-                                  name="photo[]"
-                                  type="file"
-                                  multiple=""
-                                  data-max_length="20"
-                                  accept="images/*"
-                                  max="4"
-                                  class="upload__inputfile"
-                                />
-                              </label>
-                            </div>
-                            <p class="p-0">
-                              الحجم الأقصى 5 ميغا بايت ، Jpg. Png فقط
-                            </p>
-                          </div>
-                          <div class="upload__img-wrap"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="builder-option">
-                      <div class="builder-option-name">
-                        <h5>أضف مقاطع فيديو للعقار الخاص بك</h5>
-                      </div>
-                      <div class="upload-wrapper">
-                        <div class="upload__box">
-                          <div class="upload__btn-box row align-items-center">
-                            <div
-                              class="builder-option-name d-flex gap-3 align-items-center mb-3"
-                            >
-                              <i class="fa-solid fa-video"></i>
-    
-                              <button class="upload__btn" id="addVideo">
-                                <span>تحميل فيديو</span>
-                              </button>
-                            </div>
-                            <div class="video-link" id="videos-link">
-                              <h5>رابط الفيديو</h5>
-                              <div class="d-flex">
-                                <div class="btn">
-                                  <i class="fa-brands fa-youtube"></i>
-                                </div>
-                                <input
-                                  type="text"
-                                  name="video_url1"
-                                  class="form-control m-0"
-                                  placeholder="ضع رايط الفيديو هنا"
-                                  value=""
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="profile-wrapper mb-3">
-                  <div class="section-title d-flex align-items-center gap-2 mb-4">
-                    <div class="section-img">
-                      <img src="images/1.svg" alt="" />
-                    </div>
-                    <h5 class="fw-bold m-0">تفاصيل إضافية</h5>
-                  </div>
-                  <div class="builder-options w-75">
-                    <div class="builder-option">
-                      <div class="builder-option-name">
-                        <h5>
-                          الوصف الكامل للعقار <span class="text-danger">*</span>
-                        </h5>
-                      </div>
-                      <textarea
-                        class="form-control"
-                        rows="6"
-                        name=""
-                        id=""
-                      ></textarea>
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="profile-wrapper mb-3">
-                  <div class="section-title d-flex align-items-center gap-2 mb-4">
-                    <div class="section-img">
-                      <img src="images/1.svg" alt="" />
-                    </div>
-                    <h5 class="fw-bold m-0">إدارة الصلاحيات</h5>
-                  </div>
-                  <div class="builder-options w-75">
-                    <div class="builder-option">
-                      <div class="builder-option-name">
-                        <h5>الموكلين <span class="text-danger">*</span></h5>
-                      </div>
-                      <input
-                        name=""
-                        type="text"
-                        class="form-control"
-                        placeholder=""
-                      />
-                    </div>
-                    <div class="builder-option">
-                      <div class="builder-option-name">
-                        <h5>نوع الصلاحية <span class="text-danger">*</span></h5>
-                      </div>
-                      <input
-                        name=""
-                        type="text"
-                        class="form-control"
-                        placeholder=""
-                      />
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="profile-wrapper mb-3">
-                  <div class="section-title d-flex align-items-center gap-2 mb-4">
-                    <div class="section-img">
-                      <img src="images/1.svg" alt="" />
-                    </div>
-                    <h5 class="fw-bold m-0">خيارات بيع إضافية لعقارك</h5>
-                  </div>
-    
-                  <div class="builder-options w-75">
-                    <div
-                      class="alert alert-warning d-flex align-items-center"
-                      role="alert"
+                    <ul
+                      class="nav nav-tabs border-bottom mb-3"
+                      id="myTab"
+                      role="tablist"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        class="bi flex-shrink-0 me-2"
-                        viewBox="0 0 16 16"
-                        role="img"
-                        aria-label="Warning:"
-                        fill="var(--secondary)"
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link active"
+                          id="home-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#home-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="home-tab-pane"
+                          aria-selected="true"
+                        >
+                          مسكن
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="profile-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#profile-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="profile-tab-pane"
+                          aria-selected="false"
+                        >
+                          قطع أرض
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="contact-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#contact-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="contact-tab-pane"
+                          aria-selected="false"
+                        >
+                          تجاري
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div
+                        class="tab-pane fade show active"
+                        id="home-tab-pane"
+                        role="tabpanel"
+                        aria-labelledby="home-tab"
+                        tabindex="0"
                       >
-                        <path
-                          d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                        <input
+                          name="aqar-type"
+                          type="radio"
+                          class="btn-check"
+                          id="apartment"
+                          value="apartment"
+                          autocomplete="off"
                         />
-                      </svg>
-                      <div>
-                        اختيارك لهذا النظام غير إلزامي، ويمكنك إتمام عملية البيع
-                        بالطريقة التقليدية. لكن إذا رغبت في إضافة ميزة المزايدة أو
-                        المشاركة مع آخرين، يمكنك تفعيلها هنا
+                        <label class="btn" for="apartment">
+                          <span>شقة</span>
+                        </label>
+
+                        <input
+                          name="aqar-type"
+                          type="radio"
+                          class="btn-check"
+                          id="villa"
+                          value="villa"
+                          autocomplete="off"
+                        />
+                        <label class="btn" for="villa">
+                          <span>فيلا</span>
+                        </label>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="profile-tab-pane"
+                        role="tabpanel"
+                        aria-labelledby="profile-tab"
+                        tabindex="0"
+                      >
+                        ...
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="contact-tab-pane"
+                        role="tabpanel"
+                        aria-labelledby="contact-tab"
+                        tabindex="0"
+                      >
+                        ...
                       </div>
                     </div>
-    
+                  </div>
+
+                  <div class="builder-option">
+                    <div class="builder-option-name col-md-6">
+                      <h5>العنوان<span class="text-danger">*</span></h5>
+                    </div>
                     <div class="row">
-                        <div class="col-12">
-                            <div class="builder-option">
-                              <div class="builder-option-name">
-                                <h5>اختيار نظام البيع</h5>
-                              </div>
-                              <select name="" type="text" class="form-control">
-                                <option value="" hidden>نظام البيع</option>
-                                <option value="">متزايد</option>
-                                <option value="">مشاركة</option>
-                                <option value="">خاص</option>
-                              </select>
-                            </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <select
+                            name=""
+                            class="form-control nice-select"
+                            required=""
+                          >
+                            <option value="" hidden>المنطقة / الحي</option>
+                          </select>
                         </div>
-                        <div class="col-12">
-                            <div class="builder-option">
-                                <div class="builder-option-name">
-                                  <h5>سعر بداية للعقار</h5>
-                                </div>
-                                <input name="" type="text" class="form-control" />
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="builder-option">
-                                <div class="builder-option-name">
-                                  <h5>تاريخ بداية</h5>
-                                </div>
-                                <input name="" type="date" class="form-control" />
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="builder-option">
-                                <div class="builder-option-name">
-                                  <h5>تاريخ النهاية</h5>
-                                </div>
-                                <input name="" type="date" class="form-control" />
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="builder-option">
-                      <div class="builder-option-name">
-                        <h5>سعر بداية للعقار</h5>
                       </div>
-                      <input name="" type="text" class="form-control" />
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <select
+                            name=""
+                            class="form-control nice-select"
+                            required=""
+                          >
+                            <option value="" hidden>المدينة</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <!-- add map to select location -->
+                      </div>
                     </div>
                   </div>
                 </div>
-    
-                <button class="main-outline-btn text-center">
-                    إضافة عقار
-                </button>
+              </div>
 
+              <div class="profile-wrapper mb-3">
+                <div class="section-title d-flex align-items-center gap-2 mb-4">
+                  <div class="section-img">
+                    <img src="images/1.svg" alt="" />
+                  </div>
+                  <h5 class="fw-bold m-0">الميزات والمرافق</h5>
+                </div>
+                <div class="builder-options w-75">
+                  <div class="builder-option">
+                    <div class="builder-option-name">
+                      <h5>مساحة العقار <span class="text-danger">*</span></h5>
+                    </div>
+                    <input
+                      name=""
+                      type="text"
+                      class="form-control"
+                      placeholder="متر مربع 250"
+                    />
+                  </div>
+
+                  <div class="builder-option">
+                    <div class="builder-option-name">
+                      <h5>غرف النوم<span class="text-danger">*</span></h5>
+                    </div>
+
+                    <input
+                      name="bedroom"
+                      type="radio"
+                      class="btn-check"
+                      id="studio"
+                      value="studio"
+                      autocomplete="off"
+                    />
+                    <label class="btn px-4" for="studio">
+                      <span>ستوديو</span>
+                    </label>
+
+                    <input
+                      name="bedroom"
+                      type="radio"
+                      class="btn-check"
+                      id="bedroom1"
+                      value="1"
+                      autocomplete="off"
+                    />
+                    <label class="btn px-4" for="bedroom1">
+                      <span>1</span>
+                    </label>
+
+                    <input
+                      name="bedroom"
+                      type="radio"
+                      class="btn-check"
+                      id="bedroom2"
+                      value="2"
+                      autocomplete="off"
+                    />
+                    <label class="btn px-4" for="bedroom2">
+                      <span>2</span>
+                    </label>
+
+                    <input
+                      name="bedroom"
+                      type="radio"
+                      class="btn-check"
+                      id="bedroom3"
+                      value="3"
+                      autocomplete="off"
+                    />
+                    <label class="btn px-4" for="bedroom3">
+                      <span>3</span>
+                    </label>
+
+                    <input
+                      name="bedroom"
+                      type="radio"
+                      class="btn-check"
+                      id="bedroom4"
+                      value="4"
+                      autocomplete="off"
+                    />
+                    <label class="btn px-4" for="bedroom4">
+                      <span>4</span>
+                    </label>
+                  </div>
+
+                  <div class="builder-option">
+                    <div class="builder-option-name">
+                      <h5>الحمامات<span class="text-danger">*</span></h5>
+                    </div>
+                    <input
+                      name="bathroom"
+                      type="radio"
+                      class="btn-check"
+                      id="bathroom1"
+                      value="1"
+                      autocomplete="off"
+                    />
+                    <label class="btn px-4" for="bathroom1">
+                      <span>1</span>
+                    </label>
+
+                    <input
+                      name="bathroom"
+                      type="radio"
+                      class="btn-check"
+                      id="bathroom2"
+                      value="2"
+                      autocomplete="off"
+                    />
+                    <label class="btn px-4" for="bathroom2">
+                      <span>2</span>
+                    </label>
+
+                    <input
+                      name="bathroom"
+                      type="radio"
+                      class="btn-check"
+                      id="bathroom3"
+                      value="3"
+                      autocomplete="off"
+                    />
+                    <label class="btn px-4" for="bathroom3">
+                      <span>3</span>
+                    </label>
+
+                    <input
+                      name="bathroom"
+                      type="radio"
+                      class="btn-check"
+                      id="bathroom4"
+                      value="4"
+                      autocomplete="off"
+                    />
+                    <label class="btn px-4" for="bathroom4">
+                      <span>4</span>
+                    </label>
+                  </div>
+
+                  <div class="builder-option">
+                    <div class="builder-option-name">
+                      <h5>السعر المطلوب <span class="text-danger">*</span></h5>
+                    </div>
+                    <input
+                      name=""
+                      type="text"
+                      class="form-control"
+                      placeholder="ريال سعودي 1600000"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="profile-wrapper mb-3">
+                <div class="section-title d-flex align-items-center gap-2 mb-4">
+                  <div class="section-img">
+                    <img src="images/1.svg" alt="" />
+                  </div>
+                  <h5 class="fw-bold m-0">تحميل صور وفيديو العقار</h5>
+                </div>
+                <div class="builder-options w-75">
+                  <div class="builder-option">
+                    <div class="builder-option-name">
+                      <h5>
+                        تحميل صور العقار الخاص بك
+                        <span class="text-danger">*</span>
+                      </h5>
+                    </div>
+                    <div class="upload-wrapper mb-3">
+                      <div class="upload__box">
+                        <div class="upload__btn-box row align-items-center">
+                          <div
+                            class="builder-option-name d-flex gap-3 align-items-center mb-3"
+                          >
+                            <i class="fa-regular fa-image"></i>
+
+                            <label class="upload__btn m-0">
+                              <span>تحميل صور</span>
+                              <input
+                                name="photo[]"
+                                type="file"
+                                multiple=""
+                                data-max_length="20"
+                                accept="images/*"
+                                max="4"
+                                class="upload__inputfile"
+                              />
+                            </label>
+                          </div>
+                          <p class="p-0">
+                            الحجم الأقصى 5 ميغا بايت ، Jpg. Png فقط
+                          </p>
+                        </div>
+                        <div class="upload__img-wrap"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="builder-option">
+                    <div class="builder-option-name">
+                      <h5>أضف مقاطع فيديو للعقار الخاص بك</h5>
+                    </div>
+                    <div class="upload-wrapper">
+                      <div class="upload__box">
+                        <div class="upload__btn-box row align-items-center">
+                          <div
+                            class="builder-option-name d-flex gap-3 align-items-center mb-3"
+                          >
+                            <i class="fa-solid fa-video"></i>
+
+                            <button class="upload__btn" id="addVideo">
+                              <span>تحميل فيديو</span>
+                            </button>
+                          </div>
+                          <div class="video-link" id="videos-link">
+                            <h5>رابط الفيديو</h5>
+                            <div class="d-flex">
+                              <div class="btn">
+                                <i class="fa-brands fa-youtube"></i>
+                              </div>
+                              <input
+                                type="text"
+                                name="video_url1"
+                                class="form-control m-0"
+                                placeholder="ضع رايط الفيديو هنا"
+                                value=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="profile-wrapper mb-3">
+                <div class="section-title d-flex align-items-center gap-2 mb-4">
+                  <div class="section-img">
+                    <img src="images/1.svg" alt="" />
+                  </div>
+                  <h5 class="fw-bold m-0">تفاصيل إضافية</h5>
+                </div>
+                <div class="builder-options w-75">
+                  <div class="builder-option">
+                    <div class="builder-option-name">
+                      <h5>
+                        الوصف الكامل للعقار <span class="text-danger">*</span>
+                      </h5>
+                    </div>
+                    <textarea
+                      class="form-control"
+                      rows="6"
+                      name=""
+                      id=""
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="profile-wrapper mb-3">
+                <div class="section-title d-flex align-items-center gap-2 mb-4">
+                  <div class="section-img">
+                    <img src="images/1.svg" alt="" />
+                  </div>
+                  <h5 class="fw-bold m-0">إدارة الصلاحيات</h5>
+                </div>
+                <div class="builder-options w-75">
+                  <div class="builder-option">
+                    <div class="builder-option-name">
+                      <h5>الموكلين <span class="text-danger">*</span></h5>
+                    </div>
+                    <input
+                      name=""
+                      type="text"
+                      class="form-control"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="builder-option">
+                    <div class="builder-option-name">
+                      <h5>نوع الصلاحية <span class="text-danger">*</span></h5>
+                    </div>
+                    <input
+                      name=""
+                      type="text"
+                      class="form-control"
+                      placeholder=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="profile-wrapper mb-3">
+                <div class="section-title d-flex align-items-center gap-2 mb-4">
+                  <div class="section-img">
+                    <img src="images/1.svg" alt="" />
+                  </div>
+                  <h5 class="fw-bold m-0">خيارات بيع إضافية لعقارك</h5>
+                </div>
+
+                <div class="builder-options w-75">
+                  <div
+                    class="alert alert-warning d-flex align-items-center"
+                    role="alert"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      class="bi flex-shrink-0 me-2"
+                      viewBox="0 0 16 16"
+                      role="img"
+                      aria-label="Warning:"
+                      fill="var(--secondary)"
+                    >
+                      <path
+                        d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                      />
+                    </svg>
+                    <div>
+                      اختيارك لهذا النظام غير إلزامي، ويمكنك إتمام عملية البيع
+                      بالطريقة التقليدية. لكن إذا رغبت في إضافة ميزة المزايدة أو
+                      المشاركة مع آخرين، يمكنك تفعيلها هنا
+                    </div>
+                  </div>
+
+                  <div class="builder-option">
+                    <div class="builder-option-name">
+                      <h5>اختيار نظام البيع</h5>
+                    </div>
+                    <select name="" type="text" class="form-control" id="selling-system">
+                      <option value="" hidden>نظام البيع</option>
+                      <option value="auction">متزايد</option>
+                      <option value="share">مشاركة</option>
+                      <option value="private">خاص</option>
+                    </select>
+                  </div>
+                  <div class="row" id="acution">
+                    <div class="col-12">
+                      <div class="builder-option">
+                        <div class="builder-option-name">
+                          <h5>سعر بداية للعقار</h5>
+                        </div>
+                        <input name="" type="text" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="builder-option">
+                        <div class="builder-option-name">
+                          <h5>تاريخ بداية</h5>
+                        </div>
+                        <input name="" type="date" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="builder-option">
+                        <div class="builder-option-name">
+                          <h5>تاريخ النهاية</h5>
+                        </div>
+                        <input name="" type="date" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="builder-option" id="share">
+                    <div class="builder-option-name">
+                      <h5>السعر الإجمالي للعقار</h5>
+                    </div>
+                    <input name="" type="text" class="form-control" />
+                  </div>
+                </div>
+              </div>
+
+              <button class="main-outline-btn text-center">إضافة عقار</button>
             </form>
-
           </div>
         </div>
       </div>

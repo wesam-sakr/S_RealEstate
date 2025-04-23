@@ -271,11 +271,12 @@
                 </div>
               </div>
               <div class="our-estates">
-                <!-- if estate type == auction -->
+
+                <!--==== if estate type == auction ====-->
                 <div class="card border-0 estate-type auction">
                   <div class="card-header py-3 bg-transparent">
                     <h4 class="card-title">
-                       سعر بداية المزايدة :
+                      سعر بداية المزايدة :
                       <span>75.000 <span>ريال</span></span>
                     </h4>
                   </div>
@@ -283,14 +284,14 @@
                     <table class="table m-0">
                       <tr>
                         <td>
-                          <div  class="d-flex align-items-center gap-1">
+                          <div class="d-flex align-items-center gap-1">
                             <i class="bi bi-calendar"></i>
                             <span>تاريخ بداية المزاد</span>
                             <span>2024/12/25</span>
                           </div>
                         </td>
                         <td>
-                          <div  class="d-flex align-items-center gap-1">
+                          <div class="d-flex align-items-center gap-1">
                             <i class="bi bi-calendar"></i>
                             <span>تاريخ نهاية المزاد</span>
                             <span>2025/01/25</span>
@@ -300,50 +301,35 @@
                     </table>
                   </div>
                 </div>
-                <!-- else if estate type == share -->
-                <!-- else estate type == private -->
-
                 <div class="card mt-4 border-0 estate-history">
                   <div class="card-header py-3 bg-transparent">
-                    <h4 class="card-title">
-                      سجل المزايدات :
-                    </h4>
+                    <h4 class="card-title">سجل المزايدات :</h4>
                   </div>
                   <div class="card-body py-0">
                     <table class="table m-0">
                       <thead>
-                        <th>
-                          اسم المستخدم
-                        </th>
+                        <th>اسم المستخدم</th>
                         <th>قيمة المزايدة</th>
                         <th>التاريخ</th>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>
-                            اسم المستخدم
-                          </td>
+                          <td>اسم المستخدم</td>
                           <td>77.000 <span>ريال</span></td>
                           <td>2025/26/12</td>
                         </tr>
                         <tr>
-                          <td>
-                            اسم المستخدم
-                          </td>
+                          <td>اسم المستخدم</td>
                           <td>77.000 <span>ريال</span></td>
                           <td>2025/26/12</td>
                         </tr>
                         <tr>
-                          <td>
-                            اسم المستخدم
-                          </td>
+                          <td>اسم المستخدم</td>
                           <td>77.000 <span>ريال</span></td>
                           <td>2025/26/12</td>
                         </tr>
                         <tr>
-                          <td>
-                            اسم المستخدم
-                          </td>
+                          <td>اسم المستخدم</td>
                           <td>77.000 <span>ريال</span></td>
                           <td>2025/26/12</td>
                         </tr>
@@ -351,6 +337,115 @@
                     </table>
                   </div>
                 </div>
+                <div class="card mt-3 card-note mt-4 border-0 bg-light rounded-0">
+                  <div class="card-body py-4 gap-3">
+                    <p class="card-title fw-bold fs-4">مبلغ أعلى مزايدة : 7500 ريال</p>
+                    <div>
+                      <div class="d-flex align-items-center gap-3">
+                        <p class="mb-4">قيمة المزايدة</p>
+                        <div>
+                          <div class="input-group border">
+                            <input type="number" class="form-control" id="InputPassword" placeholder="500" required>
+                            <span type="button" class="input-group-text">
+                              ريال
+                            </span>
+                          </div>
+                          <small class="text-muted">
+                            أدنى سعر للمزايدة 500 ريال
+                          </small>
+
+                        </div>
+                        <button class="main-outline-btn text-center mb-4">
+                          مزايدة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+
+                <!-- else if estate type == share -->
+                <div class="card border-0 estate-type">
+                  <div class="card-header py-3 bg-transparent">
+                    <h4 class="card-title">
+                       السعر الإجمالي للعقار :
+                      <span>75.000 <span>ريال</span></span>
+                    </h4>
+                  </div>
+                  <div class="card-body pb-4">
+                    <b>تم جمع 45.000</b>
+                    <div class="progress w-75" role="progressbar" aria-label="Basic example" aria-valuenow="45000" aria-valuemin="0" aria-valuemax="75000"  style="height: 12px">
+                      <div class="progress-bar" style="width: 65%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-0 bg-transparent rounded-0">
+                  <div class="card-body py-3 gap-3">
+                    <div>
+                      <div class="d-flex align-items-center gap-3">
+                        <b>قيمة المشاركة</b>
+                        <div>
+                          <div class="input-group border">
+                            <input type="number" class="form-control" id="InputPassword" placeholder="500" required>
+                            <span type="button" class="input-group-text">
+                              ريال
+                            </span>
+                          </div>
+                        </div>
+                        <button class="main-outline-btn text-center">
+                          شارك
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="card mt-4 border-0 estate-history">
+                  <div class="card-header py-3 bg-transparent">
+                    <h4 class="card-title">سجل المشاركات :</h4>
+                  </div>
+                  <div class="card-body py-0">
+                    <table class="table m-0">
+                      <thead>
+                        <th>اسم المستخدم</th>
+                        <th>قيمة المشاركة</th>
+                        <th>التاريخ</th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>اسم المستخدم</td>
+                          <td>77.000 <span>ريال</span></td>
+                          <td>2025/26/12</td>
+                        </tr>
+                        <tr>
+                          <td>اسم المستخدم</td>
+                          <td>77.000 <span>ريال</span></td>
+                          <td>2025/26/12</td>
+                        </tr>
+                        <tr>
+                          <td>اسم المستخدم</td>
+                          <td>77.000 <span>ريال</span></td>
+                          <td>2025/26/12</td>
+                        </tr>
+                        <tr>
+                          <td>اسم المستخدم</td>
+                          <td>77.000 <span>ريال</span></td>
+                          <td>2025/26/12</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <!-- else estate type == private -->
+                <div class="card border-0 estate-type auction">
+                  <div class="card-header border-0 py-3 bg-transparent">
+                    <h4 class="card-title m-0">
+                      هذا العقار متاح فقط عبر الرابط الخاص
+                    </h4>
+                  </div>
+                </div>
+
+                <!--==== end if ====-->
+
 
                 <div class="card mt-4 border-0 bg-light">
                   <!-- estate description -->
@@ -407,7 +502,7 @@
                   </div>
                 </div>
 
-                <div class="card mt-4 border-0 gold">
+                <div class="card mt-4 border-0 owner">
                   <!-- estate description -->
                   <div class="card-body py-4 gap-3">
                     <p class="card-title fw-bold px-3 fs-4">
@@ -417,18 +512,14 @@
                       <tbody>
                         <tr>
                           <td>
-                            <div  class="d-flex align-items-center gap-4">
-                              <b>
-                                نوع المستخدم
-                              </b>
+                            <div class="d-flex align-items-center gap-4">
+                              <b> نوع المستخدم </b>
                               <span>مالك</span>
                             </div>
                           </td>
                           <td>
-                            <div  class="d-flex align-items-center gap-4">
-                              <b>
-                                رقم العرض
-                              </b>
+                            <div class="d-flex align-items-center gap-4">
+                              <b> رقم العرض </b>
                               <span>25696</span>
                             </div>
                           </td>
@@ -488,9 +579,13 @@
                         </div>
                       </div>
                     </div>
-                    <a href="" class="main-outline-btn text-center w-100">
+                    <button
+                      class="main-outline-btn text-center w-100"
+                      data-bs-toggle="modal"
+                      data-bs-target="#estateModal"
+                    >
                       ارسال استفسار
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -647,6 +742,54 @@
           </div>
         </div>
       </section>
+
+      <!-- Modal -->
+      <div class="modal fade" id="estateModal" tabindex="-1" aria-labelledby="estateModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="estateModalLabel">
+                استفسار عن العقار : اسم العقار
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group mb-4">
+                <label for="">الاسم</label>
+                <input type="text" class="form-control" placeholder="" required="">
+              </div>
+              <div class="form-group mb-4">
+                <label for="">نوع الاستفسار</label>
+                <select class="form-control">
+                  <option value="">اخرى</option>
+                </select>
+                  
+              </div>
+              <div class="form-group mb-4">
+                <label for="">اكتب استفسارك</label>
+                <textarea class="form-control" rows="4" placeholder="" required=""></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                اغلاق
+              </button>
+              <button type="button" class="btn main-btn">
+                ارسال
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- footer section -->
       <footer>
